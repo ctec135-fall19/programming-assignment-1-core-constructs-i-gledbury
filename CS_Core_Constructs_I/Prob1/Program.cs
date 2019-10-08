@@ -1,6 +1,6 @@
 ﻿/*
-Author: <your name>
-Date:   <date>
+Author: George Ledbury
+Date:   Oct 8, 2019
 CTEC 135: Microsoft Software Development with C#
 
 <Solution Name>
@@ -35,13 +35,21 @@ namespace Prob1
     {
         static void Main(string[] args)
         {
-            #region example of a code region
-            // some code
-            #endregion
+            int a, b;
+            System.Int32 c, d;
+            int e, f = new int();
 
-            #region another code region
-            // some code
-            #endregion
+            a = 79;
+            b = 128;
+            c = 992;
+            d = 7635;
+            e = c - a;
+            f = a + b + c + d;
+
+            Console.WriteLine("a = {0}, b = {1}, c = {2}, d = {3:n}, e = {4:n}, f = {5:n}", a, b, c, d, e, f);
+            
+            Console.WriteLine("The min value of an Int32 is -2,147,483,648. It is constant meaning a user cannot change this value.");
+            Console.WriteLine("The max value of an Int32 is 2,147,483,647. It is constant meaning a user cannot change this value.");
         }
     }
 }
